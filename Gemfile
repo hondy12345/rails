@@ -71,3 +71,4 @@ gem 'mysql2'
 
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 
+gem 'rspec_junit_formatter'
