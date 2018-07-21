@@ -68,3 +68,6 @@ group :development, :test do
 end
 
 gem 'mysql2'
+
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
