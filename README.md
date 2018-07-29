@@ -30,6 +30,9 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 #### 支払い方法管理
 - /admin/payments
 - 支払い方法の情報/手数料を設定を行う
+#### 消費税管理
+- /admin/taxes
+- 消費税の設定を行う
 ### 商品系管理
 #### 商品カテゴリ管理
 - /admin/product_categories
