@@ -20,6 +20,8 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 ### マイページ
 - /mypage
 ## 管理画面
+### 管理者ログイン画面
+- /admin/login
 ### SHOP管理
 #### 基本設定
 - /admin/shop_info
@@ -33,6 +35,8 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 #### 消費税管理
 - /admin/taxes
 - 消費税の設定を行う
+#### ユーザ管理
+- 管理画面のユーザの管理を行う
 ### 商品系管理
 #### 商品カテゴリ管理
 - /admin/product_categories
