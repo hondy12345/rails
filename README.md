@@ -79,3 +79,20 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 参考：[Railsのテンプレートエンジンの比較 erb vs slim vs haml](http://ruby-rails.hatenadiary.com/entry/20141001/1412169453)
 
 Hamlと比較した際、少し指が届きづらい"%"を頻繁に打つのが少し面倒なのでSlimにしました。
+
+# 主なファイル・ディレクトリ構造
+|ファイル・ディレクトリ名|説明|
+|---|---|
+|/Gemfile|Bundlerの設定ファイル|
+|/Gemfile.lock|Gemfileを元に生成される。開発環境・運用環境で同じgemをインストールするためのファイル|
+|/Rakefile|rakeコマンドで実行できるタスクを定義するファイル|
+|/app/assets/|js/css/画像などを格納するディレクトリ|
+|/app/controllers/|コントローラクラスを格納するディレクトリ|
+|/app/controllers/application_controller.rb|共通のコントローラ|
+|/app/helpers/|ヘルパを格納するディレクトリ|
+|/app/models/|モデルクラスを格納するディレクトリ|
+|/app/views/|viewファイル(slim)を格納するディレクトリ|
+|/config/|設定ファイルを格納するディレクトリ|
+|/db/migrate/|マイグレーションファイルを格納するディレクトリ|
+|/public/|公開されるファイルを格納するディレクトリ|
+|/spec/|RSpecで利用するテスト用クラスを格納するディレクトリ|
