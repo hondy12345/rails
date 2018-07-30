@@ -76,6 +76,8 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 
 # 利用技術の採用理由
 ## Slim
+[公式](http://slim-lang.com/index.html)
+
 参考：[Railsのテンプレートエンジンの比較 erb vs slim vs haml](http://ruby-rails.hatenadiary.com/entry/20141001/1412169453)
 
 Hamlと比較した際、少し指が届きづらい"%"を頻繁に打つのが少し面倒なのでSlimにしました。
