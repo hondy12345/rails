@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  get 'user_sessions/new'
-  get 'user_sessions/create'
-  get 'user_sessions/destroy'
-  resources :users
-
-  root :to => 'users#index'
+  root :to => 'user_sessions#new'
   resources :user_sessions
   resources :users
 
