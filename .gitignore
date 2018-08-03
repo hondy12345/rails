@@ -31,3 +31,4 @@
 
 # IDE系のファイル
 /.idea/*
+.idea/railway.iml
