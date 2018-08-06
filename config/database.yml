@@ -22,7 +22,7 @@ development:
   # database: db_mysql_development
   adapter: mysql2
   encoding: utf8
-  database: rails_test
+  database: railway
   pool: 5
   username: rway
   password: Hondy_12345
@@ -36,7 +36,7 @@ test:
   username: <%= ENV['DB_USERNAME'] || 'rway' %>
   password: <%= ENV['DB_PASSWORD'] || 'Hondy_12345' %>
   host: <%= ENV['DB_HOST'] || 'localhost' %>
-  database: db_mysql_test
+  database: railway_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
