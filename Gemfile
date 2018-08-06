@@ -74,3 +74,7 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'rspec_junit_formatter'
 
 gem 'sorcery'
+
+gem 'slim-rails'
+
+gem 'html2slim'

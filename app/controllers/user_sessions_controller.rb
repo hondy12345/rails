@@ -6,6 +6,7 @@ class UserSessionsController < ApplicationController
   end
 
   def create
+    # ログインに成功するかどうか
     if @user = login(params[:email], params[:password])
       redirect_back_or_to(:users, notice: 'Login successful')
     else
