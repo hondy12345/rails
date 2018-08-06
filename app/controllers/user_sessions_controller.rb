@@ -6,7 +6,8 @@ class UserSessionsController < ApplicationController
   end
 
   def create
-    if @user == login(params[:email], params[:password])
+    # ログインに成功するかどうか
+    if @user = login(params[:email], params[:password])
       redirect_back_or_to(:users, notice: 'Login successful')
     else
       flash.now[:alert] = 'Login failed'
