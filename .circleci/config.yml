@@ -11,8 +11,8 @@ jobs:
          environment:
            RAILS_ENV: test
            DB_HOST: 127.0.0.1
-           DB_USERNAME: 'rway'
-           DB_PASSWORD: 'Hondy_12345'
+           DB_USERNAME: 'root'
+           DB_PASSWORD: ''
        - image: circleci/mysql:5.7
 
       # Specify service dependencies here if necessary
