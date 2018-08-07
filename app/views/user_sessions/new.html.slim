@@ -1,6 +1,8 @@
-h1
-  | UserSessions#new
-p
-  | Find me in app/views/user_sessions/new.html.erb
-= render 'form'
-= link_to 'Back', user_sessions_path
+.container
+  .row.justify-content-md-center.mt-5
+    .col-md-8.md-offset-2
+      .card
+        .card-header.bg-dark.text-white
+          | ログイン
+        .card-body
+          = render 'form', user: @user

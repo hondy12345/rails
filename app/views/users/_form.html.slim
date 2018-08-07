@@ -10,17 +10,17 @@
             = message
   .field.row.mt-3
     .col-md-4.text-right
-      = form.label :email, class: 'col-form-label'
+      = form.label :email, 'メールアドレス', class: 'col-form-label'
     .col-md-6
       = form.text_field :email, class: 'form-control'
   .field.row.mt-3
     .col-md-4.text-right
-      = form.label :password, class: 'col-form-label'
+      = form.label :password, 'パスワード', class: 'col-form-label'
     .col-md-6
       = form.password_field :password, class: 'form-control'
   .field.row.mt-3
     .col-md-4.text-right
-      = form.label :password_confirmation, class: 'col-form-label'
+      = form.label :password_confirmation, 'パスワード（確認）', class: 'col-form-label'
     .col-md-6
       = form.password_field :password_confirmation, class: 'form-control'
   .row.mt-3
