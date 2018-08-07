@@ -8,16 +8,22 @@
         - user.errors.full_messages.each do |message|
           li
             = message
-  .field
-    = form.label :email
-    = form.text_field :email
-  .field
-    = form.label :password
-    br
-    = form.password_field :password
-  .field
-    = form.label :password_confirmation
-    br
-    = form.password_field :password_confirmation
-  .actions
-    = form.submit
+  .field.row.mt-3
+    .col-md-4.text-right
+      = form.label :email, class: 'col-form-label'
+    .col-md-6
+      = form.text_field :email, class: 'form-control'
+  .field.row.mt-3
+    .col-md-4.text-right
+      = form.label :password, class: 'col-form-label'
+    .col-md-6
+      = form.password_field :password, class: 'form-control'
+  .field.row.mt-3
+    .col-md-4.text-right
+      = form.label :password_confirmation, class: 'col-form-label'
+    .col-md-6
+      = form.password_field :password_confirmation, class: 'form-control'
+  .row.mt-3
+    .col-md-6.offset-md-4
+      = link_to "キャンセル", "/", class: 'btn btn-danger'
+      = form.submit '登録', class: 'btn btn-primary'

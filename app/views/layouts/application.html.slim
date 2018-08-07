@@ -2,19 +2,34 @@ doctype html
 html
   head
     title
-      | RoR EC
+      | RoR_EC
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
   body
-    #nav
-      - if current_user
-        = link_to "Edit Profile", edit_user_path(current_user.id)
-        = link_to "Logout", :logout, method: :post
-      - else
-        = link_to "Register", new_user_path
-        |  | 
-        = link_to "Login", :login
+    #nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container.text-white
+        = link_to '/' do
+          .navbar-bland.text-white
+            | RoR_EC
+        .collapse.navbar-collapse.justify-content-end
+          ul.nav.navbar-nav.navbar-right
+            - if current_user
+              li
+                = link_to edit_user_path(current_user.id) do
+                  .nav-link
+                    | ユーザ情報編集
+              li.nav-item
+                = link_to "Logout", :logout, method: :post
+            - else
+              li
+                = link_to new_user_path do
+                  .nav-link
+                    | 登録
+              li
+                = link_to :login
+                  .nav-link
+                    | ログイン
     div
       p#notice
         = flash[:notice]
