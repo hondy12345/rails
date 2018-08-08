@@ -1,17 +1,26 @@
-p#notice
-  = notice
-p
-  strong
-    | Email:
-  = @user.email
-p
-  strong
-    | Crypted password:
-  = @user.crypted_password
-p
-  strong
-    | Salt:
-  = @user.salt
-= link_to 'Edit', edit_user_path(@user)
-|  | 
-= link_to 'Back', users_path
+.container
+  .row.justify-content-md-center.mt-5
+    .col-md-12
+      .card
+        .card-header.bg-dark.text-white
+          .row
+            .col-md-10.text-left
+              = link_to users_path, class: 'btn btn-sm btn-outline-success' do
+                i.fas.fa-fw.fa-chevron-circle-left
+              | 　ユーザ情報
+            .col-md-2.text-right
+              = link_to edit_user_path(@user), class: 'btn btn-sm btn-outline-success' do
+                i.fa.fa-fw.fa-edit
+        .card-body
+          p
+            strong
+              | Email:
+            = @user.email
+          p
+            strong
+              | Crypted password:
+            = @user.crypted_password
+          p
+            strong
+              | Salt:
+            = @user.salt

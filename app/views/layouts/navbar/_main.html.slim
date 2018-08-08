@@ -1,0 +1,21 @@
+#nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  .container.text-white
+    = link_to '/', class: "nav-item navbar-bland text-white" do
+      | RoR_EC
+    .collapse.navbar-collapse.justify-content-end
+      ul.nav.navbar-nav.navbar-right
+        - if current_user
+          li.nav-item.dropdown
+            =link_to "#", class: "nav-link dropdown-toggle", data: {toggle: "dropdown"} do
+              i.fas.fa-fw.fa-user
+            .dropdown-menu.dropdown-menu-right
+              = link_to edit_user_path(current_user.id), class: "dropdown-item" do
+                | ユーザ情報編集
+              = link_to "Logout", :logout, method: :post, class: "dropdown-item"
+        - else
+          li
+            = link_to new_user_path, class: "nav-link" do
+              | 登録
+          li
+            = link_to :login, class: "nav-link" do
+              | ログイン
