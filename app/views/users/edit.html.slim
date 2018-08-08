@@ -1,6 +1,8 @@
-h1
-  | Editing User
-= render 'form', user: @user
-= link_to 'Show', @user
-|  | 
-= link_to 'Back', users_path
+.container
+  .row.justify-content-md-center.mt-5
+    .col-md-12
+      .card
+        .card-header.bg-dark.text-white
+          | ユーザ情報編集
+        .card-body
+          = render 'form', user: @user

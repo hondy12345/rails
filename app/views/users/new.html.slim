@@ -1,4 +1,8 @@
-h1
-  | New User
-= render 'form', user: @user
-= link_to 'Back', users_path
+.container
+  .row.justify-content-md-center.mt-5
+    .col-md-8.md-offset-2
+      .card
+        .card-header.bg-dark.text-white
+          | ユーザ登録
+        .card-body
+          = render 'form', user: @user
