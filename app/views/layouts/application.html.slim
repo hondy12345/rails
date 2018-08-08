@@ -6,6 +6,7 @@ html
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
   body
     #nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
       .container.text-white
@@ -16,7 +17,7 @@ html
             - if current_user
               li.nav-item.dropdown
                 =link_to "#", class: "nav-link dropdown-toggle", data: {toggle: "dropdown"} do
-                  | ユーザ
+                  i.fas.fa-fw.fa-user
                 .dropdown-menu.dropdown-menu-right
                   = link_to edit_user_path(current_user.id), class: "dropdown-item" do
                     | ユーザ情報編集
