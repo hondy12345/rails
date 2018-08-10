@@ -82,6 +82,14 @@ Ruby on Railsを利用したECサイトの構築プロジェクトです。
 
 Hamlと比較した際、少し指が届きづらい"%"を頻繁に打つのが少し面倒なのでSlimにしました。
 
+## sorcery
+[公式](https://github.com/Sorcery/sorcery)
+
+参考：[Rails でアカウントロジックを扱うなら sorcery が良いかも](https://qiita.com/ltcmdr927/items/90ba8b924ad65d773625)
+
+deviceよりsorceryのほうが楽だと聞いたので。
+四苦八苦しましたが公式に載っている[Simple Password Authentication](https://github.com/Sorcery/sorcery/wiki/Simple-Password-Authentication)通りにやるとすんなりでした。
+
 # 主なファイル・ディレクトリ構造
 |ファイル・ディレクトリ名|説明|
 |---|---|
