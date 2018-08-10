@@ -90,6 +90,19 @@ Hamlと比較した際、少し指が届きづらい"%"を頻繁に打つのが�
 deviceよりsorceryのほうが楽だと聞いたので。
 四苦八苦しましたが公式に載っている[Simple Password Authentication](https://github.com/Sorcery/sorcery/wiki/Simple-Password-Authentication)通りにやるとすんなりでした。
 
+## RSpec
+[公式](https://github.com/rspec/rspec-rails)
+
+簡単に言うと、機能がリッチで楽だからです。
+ECなので、入力データのテストを書いたりするのにもRSpecが向いているかと思い、選択しました。
+
+## CircleCI
+[公式](https://circleci.com/)
+
+参考：[Jenkins CircleCI 比較](https://qiita.com/ryotax/items/280f15fcee22839e657a)
+
+ひとまず、個人リポジトリなので上記で挙げられているCircleCIのデメリットはないようなものなのでCircleCIにしました。
+
 # 主なファイル・ディレクトリ構造
 |ファイル・ディレクトリ名|説明|
 |---|---|
